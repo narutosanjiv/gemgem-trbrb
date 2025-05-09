@@ -1,10 +1,10 @@
 source "https://rubygems.org"
-gem "rails", "5.0.0" #, "~> 4.2.0"
-gem "sass-rails"#, "~> 4.0.3"
+gem "rails", "7.0.0" #, "~> 4.2.0"
+gem "sass-rails", ">= 6.0.0" #, "~> 4.0.3"
 gem "uglifier"#, ">= 1.3.0"
 gem "coffee-rails"#, "~> 4.0.0"
 gem "jquery-rails"
-gem "foundation-rails", "< 6.0"
+gem "foundation-rails", "~> 6.5", ">= 6.5.1.0"
 gem "haml-rails"
 gem "simple_form"
 gem "therubyracer", :platform=>:ruby
@@ -18,7 +18,7 @@ gem "pg"
 gem "responders"
 
 group :development, :test do
-  gem "minitest-spec-rails"
+  gem "minitest-spec-rails", ">= 6.0.1"
   gem "minitest-rails-capybara"
   gem "minitest-line"
 end
@@ -57,7 +57,7 @@ gem "cells-rails"
 gem "cells", "4.1.2"
 gem "cells-haml"
 gem "haml", github: "haml/haml", ref: "7c7c169"
-gem "kaminari-cells"
+gem "kaminari-cells", ">= 1.0.0"
 
 gem "paperdragon", ">= 0.0.10"
 gem "file_validators", "~> 1.2"

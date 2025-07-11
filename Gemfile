@@ -1,30 +1,30 @@
 source "https://rubygems.org"
-gem "rails", "5.0.0" #, "~> 4.2.0"
-gem "sass-rails"#, "~> 4.0.3"
+gem "rails", "7.1.0" #, "~> 4.2.0"
+gem "sass-rails", ">= 6.0.0" #, "~> 4.0.3"
 gem "uglifier"#, ">= 1.3.0"
-gem "coffee-rails"#, "~> 4.0.0"
-gem "jquery-rails"
-gem "foundation-rails", "< 6.0"
-gem "haml-rails"
-gem "simple_form"
+gem "coffee-rails", ">= 4.2.2" #, "~> 4.0.0"
+gem "jquery-rails", ">= 4.2.0"
+gem "foundation-rails", "~> 6.5", ">= 6.5.1.0"
+gem "haml-rails", ">= 1.0.0"
+gem "simple_form", ">= 4.0.0"
 gem "therubyracer", :platform=>:ruby
-gem "thin"
+gem "thin", ">= 2.0.0"
 group :development do
   gem "binding_of_caller", :platforms=>[:mri_21]
   # gem "quiet_assets"
   gem "rails_layout"
 end
 gem "pg"
-gem "responders"
+gem "responders", ">= 3.0.0"
 
 group :development, :test do
-  gem "minitest-spec-rails"
-  gem "minitest-rails-capybara"
+  gem "minitest-spec-rails", ">= 6.0.1"
+  gem "minitest-rails-capybara", ">= 3.0.1"
   gem "minitest-line"
 end
 
 group :test do
-  gem 'memory_test_fix'
+  gem 'memory_test_fix', '>= 1.4.2'
   gem "sqlite3"
 end
 
@@ -53,21 +53,21 @@ gem "trailblazer-rails" #, '0.2.0'
 # gem "disposable", path: "../disposable"
 # gem "cells", git: "https://github.com/apotonick/cells"
 # gem "cells", path: "../cells"
-gem "cells-rails"
+gem "cells-rails", ">= 0.0.7"
 gem "cells", "4.1.2"
 gem "cells-haml"
 gem "haml", github: "haml/haml", ref: "7c7c169"
-gem "kaminari-cells"
+gem "kaminari-cells", ">= 1.0.1"
 
 gem "paperdragon", ">= 0.0.10"
-gem "file_validators", "~> 1.2"
+gem "file_validators", "~> 2.0", ">= 2.0.0"
 gem "roar", github: "apotonick/roar" #"1.0.0"
 # gem "roar", "1.0.3"
 
-gem "pundit"
+gem "pundit", ">= 2.0.0"
 
-gem "rails-timeago"
-gem "email_validator"
+gem "rails-timeago", ">= 2.15.0"
+gem "email_validator", ">= 2.0.0"
 
 gem "foundation-icons-sass-rails"
 

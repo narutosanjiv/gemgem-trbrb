@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "rails", "5.0.0" #, "~> 4.2.0"
+gem "rails", "7.1.5.2" #, "~> 4.2.0"
 gem "sass-rails"#, "~> 4.0.3"
 gem "uglifier"#, ">= 1.3.0"
 gem "coffee-rails"#, "~> 4.0.0"
@@ -18,7 +18,7 @@ gem "pg"
 gem "responders"
 
 group :development, :test do
-  gem "minitest-spec-rails"
+  gem "minitest-spec-rails", ">= 5.5.0"
   gem "minitest-rails-capybara"
   gem "minitest-line"
 end
